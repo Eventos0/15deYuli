@@ -52,9 +52,11 @@ html {
     font-family: 'fontshare1', sans-serif;
     font-size: 5vh;
     color: #500c55;
+    width: 80%;
+    margin: 0 auto;
     text-transform: uppercase;
     letter-spacing: 3px;
-    animation: fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate;
+    animation: fadeInRight 3s ease-in-out forwards, glow 2s infinite alternate;
 }
 
 .container-portada .quince {
@@ -62,7 +64,19 @@ html {
     font-size: 15vh;
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
     color: #500c55;
-    animation: fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate;
+    animation:fadeInLeft 3s ease-in-out forwards, glow 2s infinite alternate;
+    display: inline-block;
+}
+
+.quince .v {
+    display: inline-block;
+    animation: fadeIn 5s ease-in-out forwards;
+}
+
+.quince .x {
+    display: inline-block;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s; /* La X aparece 0.5s después */
 }
 
 .yuli{
@@ -72,23 +86,22 @@ html {
     color: #500c55;
     animation: fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate;
 }
+
 @keyframes fadeIn {
     from {
-        opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-50px);
     }
     to {
-        opacity: 1;
         transform: translateY(0);
     }
 }
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px #d676ab;
+        text-shadow: 0 0 20px #b84785;
     }
     to {
-        text-shadow: 0 0 50px #fff;
+        text-shadow: 0 0 100px #fff;
     }
 }
 
@@ -176,31 +189,8 @@ html {
     margin: 0 4dvw;
     font-size: 2.5dvh;
     animation: fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate;
-}
-.ubicacion #map-right{
-    padding: 1dvh;
-    animation: movimiento-right 3s infinite alternate ease-in-out;
-}
-
-.ubicacion #map-left{
-    padding: 1dvh;
-    animation: movimiento-left 3s infinite alternate ease-in-out;
-}
-
-@keyframes movimiento-right{
-    from{
-        transform: translateX(0);
-    } to {
-        transform: translateX(3dvw);
-    }
-}
-
-@keyframes movimiento-left{
-    from{
-        transform: translateX(0);
-    } to {
-        transform: translateX(-3dvw);
-    }
+    font-size: 2rem;
+    padding: 10px 0;
 }
 
 
@@ -218,3 +208,93 @@ html {
     grid-column: span 2;
     animation: fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate;
 }
+
+
+/*animaciones*/
+@keyframes fadeInLeft {
+    from {
+        opacity: 0.5;
+        transform: translateX(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0.5;
+        transform: translateX(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-left {
+    animation: fadeInLeft 3s ease-in-out forwards;
+}
+
+.fade-in-right {
+    animation: fadeInRight 3s ease-in-out forwards;
+}
+
+.btn-anim {
+    display: inline-block;
+    margin: 2dvh;
+    padding: 2dvh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFD1DC;
+    background: #500c55;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    animation: fadeInTop 2.5s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-left {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInLeft 3s ease-in-out forwards;
+}
+
+.fade-in-right {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInRight 3s ease-in-out forwards;
+}
+
+/* Retrasos para que aparezcan intercaladas */
+.fade-in-left:nth-child(1) { animation-delay: 0s; }
+.fade-in-right:nth-child(2) { animation-delay: 0.5s; }
+.fade-in-left:nth-child(3) { animation-delay: 1s; }
+.fade-in-right:nth-child(4) { animation-delay: 1.5s; }
+.fade-in-left:nth-child(5) { animation-delay: 2s; }
+
