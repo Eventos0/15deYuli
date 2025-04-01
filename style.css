@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(0deg, #A8D1F2, #6E9BB5);
+    background: linear-gradient(0deg, #8D77AB, #F6F0F0);
     animation: rotateGradient 6s ease-in-out infinite;
 }
 @font-face {
@@ -33,13 +33,13 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    color: #3C4A6E;
+    color: #8D77AB;
     border-radius: 5px;
     max-width: 400px;
 }
 
 .container-portada {
-    background: linear-gradient(135deg, #A6C8E7, #5C7E9D);
+    background: linear-gradient(135deg, #F6F9F9, #ADB2D4);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-columns: 1fr;
@@ -50,7 +50,7 @@ html {
 .container-portada h1 {
     font-family: 'fontshare1', sans-serif;
     font-size: 5vh;
-    color: #3C4A6E;
+    color: #8D77AB;
     width: 80%;
     margin: 0 auto;
     text-transform: uppercase;
@@ -62,7 +62,7 @@ html {
     font-family: 'fontshare1', sans-serif;
     font-size: 15vh;
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
-    color: #3C4A6E;
+    color: #8D77AB;
     animation: fadeInLeft 3s ease-in-out forwards, glow 2s infinite alternate;
     display: inline-block;
 }
@@ -82,7 +82,7 @@ html {
     font-family: 'fontshare1', sans-serif;
     font-size: 5vh;
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
-    color: #3C4A6E;
+    color: #8D77AB;
     animation: fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate;
 }
 
@@ -97,10 +97,10 @@ html {
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 20px #5C7E9D;
+        text-shadow: 0 0 20px #F6F9F9;
     }
     to {
-        text-shadow: 0 0 100px #A6C8E7;
+        text-shadow: 0 0 100px #8D77AB;
     }
 }
 
@@ -111,16 +111,16 @@ html {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: #A6C8E7;
-    background: #3C4A6E;
+    color: #8D77AB;
+    background: transparent;
     border-radius: 15px;
     transition: all 0.3s ease-in-out;
     animation: fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate;
+    box-shadow: 0px 0px 20px #8D77AB;
 }
 
 .container-informacion {
-    background: linear-gradient(135deg, #A6C8E7, #5C7E9D);
-    background-size: 200% 200%;
+    background: linear-gradient(135deg, #ADB2D4, #9097c0);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -130,10 +130,11 @@ html {
     border-radius: 15px;
 }
 
+
 .container-informacion h2 {
     font-family: 'fontshare1', sans-serif;
     font-size: 4vh;
-    color: #3C4A6E;
+    color: #F6F9F9;
     text-transform: uppercase;
     margin-bottom: 2dvh;
     grid-column: span 2;
@@ -142,7 +143,7 @@ html {
 .container-informacion h3 {
     font-family: 'fontshare2', sans-serif;
     font-size: 3vh;
-    color: #3C4A6E;
+    color: #F6F9F9;
     margin: 1dvh 0;
     animation: fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate;
 }
@@ -176,9 +177,9 @@ html {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: #3C4A6E;
+    color: #F6F9F9;
     grid-column: span 2;
-    box-shadow: 0px 0px 20px #A6C8E7;
+    box-shadow: 0px 0px 15px #F6F9F9;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -201,11 +202,11 @@ html {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: #A6C8E7;
-    background: #3C4A6E;
+    color: #F6F9F9;
+    background: transparent;
     border-radius: 15px;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0px 0px 15px #A6C8E7;
+    box-shadow: 0px 0px 15px #F6F9F9;
     grid-column: span 2;
     animation: fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate;
 }
@@ -249,8 +250,8 @@ html {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: #A6C8E7;
-    background: #3C4A6E;
+    color: #F6F9F9;
+    background: transparent;
     border-radius: 15px;
     transition: all 0.3s ease-in-out;
     animation: fadeInTop 2.5s ease-in-out forwards;
