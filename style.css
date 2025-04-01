@@ -81,7 +81,6 @@ html {
 .yuli{
     font-family: 'fontshare1', sans-serif;
     font-size: 5vh;
-    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
     color: #8D77AB;
     animation: fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate;
 }
